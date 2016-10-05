@@ -18,6 +18,7 @@
 
         <activity android:name=".ContentTransitionActivityA"/>
         <activity android:name=".ContentTransitionActivityB"/>
+        <activity android:name=".SharedElementsActivity"/>
     </application>
 
 </manifest>

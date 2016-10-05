@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a test message!\n
+        This is a test message!\n
+        This is a test message!"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/circle_blue"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="@string/transition_name_square_blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/activity_main_shared_elements"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/transition_name_element_title"/>
+</LinearLayout>

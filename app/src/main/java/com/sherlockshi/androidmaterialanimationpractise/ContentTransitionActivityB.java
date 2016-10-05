@@ -1,6 +1,5 @@
 package com.sherlockshi.androidmaterialanimationpractise;
 
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -29,7 +28,7 @@ public class ContentTransitionActivityB extends BaseSampleActivity {
 
         setContentView(R.layout.activity_content_trnasition_b);
 
-        mToolbar.setBackgroundColor(Color.parseColor("#ef5350"));
+        mToolbar.setBackgroundColor(getResources().getColor(R.color.red));
 
 //        setupWindowAnimations();
     }

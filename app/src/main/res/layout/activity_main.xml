@@ -3,18 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.sherlockshi.androidmaterialanimationpractise.base.MainActivity">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ButtonStyle"
-        android:text="@string/activity_main_content_transition"
-        android:onClick="jumpToContentTransitionActivity"/>
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:onClick="jumpToContentTransitionActivity">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/circle_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/activity_main_content_transition"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:onClick="jumpToSharedElementsActivity">
+
+        <ImageView
+            android:id="@+id/iv_square_blue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/circle_blue"
+            android:transitionName="@string/transition_name_square_blue"/>
+
+        <TextView
+            android:id="@+id/tv_element_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/activity_main_shared_elements"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:transitionName="@string/transition_name_element_title"/>
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/ButtonStyle"-->
+        <!--android:text="@string/activity_main_content_transition"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/ButtonStyle"-->
+        <!--android:text="@string/activity_main_shared_elements"-->
+        <!--android:onClick="jumpToContentTransitionActivity"/>-->
+
 
 </LinearLayout>

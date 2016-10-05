@@ -7,4 +7,9 @@
     <color name="buttonColorPrimary">#03A9F4</color>
     <color name="buttonColorPrimaryDark">#0288D1</color>
     <color name="buttonColorDisable">#4003A9F4</color>
+
+    <color name="red">#EF5350</color>
+    <color name="blue">#42A5F5</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FFA726</color>
 </resources>

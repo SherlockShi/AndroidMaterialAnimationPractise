@@ -3,4 +3,7 @@
 
     <string name="activity_main_content_transition">Content Transition</string>
     <string name="activity_main_shared_elements">Shared Elements</string>
+
+    <string name="transition_name_square_blue">square_blue</string>
+    <string name="transition_name_element_title">element_title</string>
 </resources>
