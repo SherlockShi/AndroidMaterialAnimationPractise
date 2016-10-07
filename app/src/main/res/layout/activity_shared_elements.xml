@@ -6,18 +6,8 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is a test message!\n
-        This is a test message!\n
-        This is a test message!"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"/>
-
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        style="@style/ImageBig"
         android:layout_marginTop="20dp"
         android:src="@drawable/circle_blue"
         android:layout_gravity="center_horizontal"
@@ -28,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:gravity="center"
-        android:text="@string/activity_main_shared_elements"
+        android:text="@string/activity_name_shared_elements"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:transitionName="@string/transition_name_element_title"/>

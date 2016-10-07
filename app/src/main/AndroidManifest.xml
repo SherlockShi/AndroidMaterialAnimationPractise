@@ -19,6 +19,8 @@
         <activity android:name=".ContentTransitionActivityA"/>
         <activity android:name=".ContentTransitionActivityB"/>
         <activity android:name=".SharedElementsActivity"/>
+        <activity android:name=".ViewAnimations1Activity"/>
+        <activity android:name=".ViewAnimations2Activity"/>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@ package com.sherlockshi.androidmaterialanimationpractise.base;
  * Date:   2016-09-17 21:48
  * Description:
  */
-public abstract class BaseSampleActivity extends BaseActivity {
+public class BaseSampleActivity extends BaseActivity {
 
     @Override
     protected void customSetContentView() {
@@ -14,8 +14,11 @@ public abstract class BaseSampleActivity extends BaseActivity {
         initData();
     }
 
-    protected abstract void initView();
+    protected void initData() {
+    }
 
-    protected abstract void initData();
+    protected void initView() {
+    }
+
 
 }

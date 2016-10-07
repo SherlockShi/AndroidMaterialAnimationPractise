@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">AndroidMaterialAnimationPractise</string>
+    <string name="app_name">Android Material Animations Practise</string>
 
-    <string name="activity_main_content_transition">Content Transition</string>
-    <string name="activity_main_shared_elements">Shared Elements</string>
+    <string name="activity_name_content_transition">Content Transition</string>
+    <string name="activity_name_shared_elements">Shared Elements</string>
+    <string name="activity_name_view_animations">View Animations</string>
+    <string name="activity_name_scenes">Scenes</string>
 
     <string name="transition_name_square_blue">square_blue</string>
     <string name="transition_name_element_title">element_title</string>
+
 </resources>

@@ -10,6 +10,7 @@ import android.view.View;
 import com.sherlockshi.androidmaterialanimationpractise.ContentTransitionActivityA;
 import com.sherlockshi.androidmaterialanimationpractise.R;
 import com.sherlockshi.androidmaterialanimationpractise.SharedElementsActivity;
+import com.sherlockshi.androidmaterialanimationpractise.ViewAnimations1Activity;
 
 public class MainActivity extends BaseListActivity {
 
@@ -19,6 +20,7 @@ public class MainActivity extends BaseListActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getToolbar().setTitle(R.string.app_name);
     }
 
     public void jumpToContentTransitionActivity(View view) {
@@ -48,5 +50,9 @@ public class MainActivity extends BaseListActivity {
         } else {
             startActivity(intent);
         }
+    }
+
+    public void jumpToViewAnimations1Activity(View view) {
+        startActivity(new Intent(MainActivity.this, ViewAnimations1Activity.class));
     }
 }

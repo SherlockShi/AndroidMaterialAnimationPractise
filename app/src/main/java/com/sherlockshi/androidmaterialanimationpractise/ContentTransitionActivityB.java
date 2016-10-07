@@ -10,6 +10,7 @@ import android.transition.TransitionInflater;
 import android.view.Gravity;
 import android.view.View;
 
+import com.jaeger.library.StatusBarUtil;
 import com.sherlockshi.androidmaterialanimationpractise.base.BaseSampleActivity;
 import com.sherlockshi.androidmaterialanimationpractise.base.Config;
 import com.sherlockshi.androidmaterialanimationpractise.base.Constants;
@@ -28,7 +29,10 @@ public class ContentTransitionActivityB extends BaseSampleActivity {
 
         setContentView(R.layout.activity_content_trnasition_b);
 
-        mToolbar.setBackgroundColor(getResources().getColor(R.color.red));
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.red));
+
+        getToolbar().setBackgroundColor(getResources().getColor(R.color.red));
+        getToolbar().setTitle(R.string.activity_name_content_transition);
 
 //        setupWindowAnimations();
     }
@@ -78,15 +82,5 @@ public class ContentTransitionActivityB extends BaseSampleActivity {
         } else {
             finish();
         }
-    }
-
-    @Override
-    protected void initView() {
-        
-    }
-
-    @Override
-    protected void initData() {
-
     }
 }

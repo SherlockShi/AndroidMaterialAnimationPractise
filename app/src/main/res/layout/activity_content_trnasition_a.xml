@@ -12,9 +12,10 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/ButtonStyle"
+        android:layout_height="60dp"
+        android:theme="@style/BlueButton"
         android:text="jump to Activity B"
+        android:textAllCaps="false"
         android:onClick="jumpToContentTransitionBctivity"/>
 
 </LinearLayout>

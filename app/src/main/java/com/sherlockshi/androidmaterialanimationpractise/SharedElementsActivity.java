@@ -3,6 +3,7 @@ package com.sherlockshi.androidmaterialanimationpractise;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.jaeger.library.StatusBarUtil;
 import com.sherlockshi.androidmaterialanimationpractise.base.BaseSampleActivity;
 
 /**
@@ -18,15 +19,11 @@ public class SharedElementsActivity extends BaseSampleActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_shared_elements);
-    }
 
-    @Override
-    protected void initView() {
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.blue));
 
-    }
+        getToolbar().setBackgroundColor(getResources().getColor(R.color.blue));
 
-    @Override
-    protected void initData() {
-
+        getToolbar().setTitle(R.string.activity_name_shared_elements);
     }
 }

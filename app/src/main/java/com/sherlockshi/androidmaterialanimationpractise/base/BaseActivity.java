@@ -20,7 +20,11 @@ import com.sherlockshi.androidmaterialanimationpractise.R;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private NestedScrollView contentView = null;
-    protected Toolbar mToolbar;
+    private Toolbar mToolbar;
+
+    public Toolbar getToolbar() {
+        return mToolbar;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,6 +45,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             mToolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(mToolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
             mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

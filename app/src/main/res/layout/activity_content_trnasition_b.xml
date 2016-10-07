@@ -12,9 +12,10 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/ButtonStyle"
+        android:layout_height="60dp"
+        android:theme="@style/RedButton"
         android:text="return to Activity A"
+        android:textAllCaps="false"
         android:onClick="returnToContentTransitionActivity"/>
 
 </LinearLayout>
