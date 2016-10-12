@@ -16,7 +16,8 @@
 
         <ImageView
             style="@style/ImageSmall"
-            android:src="@drawable/circle_red" />
+            android:src="@drawable/circle_24dp"
+            android:tint="@color/red" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +39,8 @@
         <ImageView
             android:id="@+id/iv_square_blue"
             style="@style/ImageSmall"
-            android:src="@drawable/circle_blue"
+            android:src="@drawable/circle_24dp"
+            android:tint="@color/blue"
             android:transitionName="@string/transition_name_square_blue"/>
 
         <TextView
@@ -62,13 +64,37 @@
 
         <ImageView
             style="@style/ImageSmall"
-            android:src="@drawable/circle_green"/>
+            android:src="@drawable/circle_24dp"
+            android:tint="@color/green"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:text="@string/activity_name_view_animations"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:onClick="jumpToCircularRevealActivity">
+
+        <ImageView
+            android:id="@+id/iv_square_orange"
+            style="@style/ImageSmall"
+            android:src="@drawable/circle_24dp"
+            android:tint="@color/orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/activity_name_circular_reveal"
             android:textSize="20sp"
             android:textColor="@android:color/black"/>
     </LinearLayout>

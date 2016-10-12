@@ -11,9 +11,14 @@
     <color name="red">#EF5350</color>
     <color name="blue">#42A5F5</color>
     <color name="green">#4CAF50</color>
-    <color name="orange">#FFA726</color>
+    <color name="orange">@color/theme_yellow_primary</color>
 
     <color name="text_light">@android:color/white</color>
     <color name="text_dark">#616161</color>
 
+    <color name="theme_yellow_background">#ffff8d</color>
+    <color name="theme_yellow_primary">#ff8800</color>
+    <color name="theme_yellow_accent">#19dcff</color>
+    <color name="theme_yellow_text">@color/text_dark</color>
+    <color name="theme_yellow_primary_dark">#EF6C00</color>
 </resources>

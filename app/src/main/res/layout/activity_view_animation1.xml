@@ -11,7 +11,8 @@
         android:id="@+id/iv_square_green"
         style="@style/ImageBig"
         android:layout_marginTop="40dp"
-        android:src="@drawable/circle_green" />
+        android:src="@drawable/circle_24dp"
+        android:tint="@color/green"/>
 
 
     <TextView

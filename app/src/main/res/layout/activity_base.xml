@@ -17,8 +17,9 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
             android:elevation="4dp"
-            android:minHeight="?attr/actionBarSize" />
-
+            android:transitionName="@string/activity_name_circular_reveal"
+            android:minHeight="?attr/actionBarSize" >
+        </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView

@@ -7,6 +7,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.view.View;
 
+import com.sherlockshi.androidmaterialanimationpractise.CircularRevealActivity;
 import com.sherlockshi.androidmaterialanimationpractise.ContentTransitionActivityA;
 import com.sherlockshi.androidmaterialanimationpractise.R;
 import com.sherlockshi.androidmaterialanimationpractise.SharedElementsActivity;
@@ -54,5 +55,22 @@ public class MainActivity extends BaseListActivity {
 
     public void jumpToViewAnimations1Activity(View view) {
         startActivity(new Intent(MainActivity.this, ViewAnimations1Activity.class));
+    }
+
+    public void jumpToCircularRevealActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, CircularRevealActivity.class);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            View ivSquareOrange = findViewById(R.id.iv_square_orange);
+            String squareBlueTransitionName = getString(R.string.transition_name_circular_reveal);
+
+            // only one shared elements
+            ActivityOptionsCompat activityOptionsCompat =
+                    ActivityOptionsCompat.makeSceneTransitionAnimation(this, ivSquareOrange, squareBlueTransitionName);
+
+            startActivity(intent, activityOptionsCompat.toBundle());
+        } else {
+            startActivity(intent);
+        }
     }
 }
